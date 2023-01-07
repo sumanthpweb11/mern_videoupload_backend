@@ -1,0 +1,46 @@
+{
+  "name": "mern_videoupload_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../mern_videoshare_frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumanthpweb11/mern_videoupload_backend.git"
+  },
+  "keywords": [
+    "mern",
+    "video",
+    "upload",
+    "reactjs",
+    "express",
+    "mongodb"
+  ],
+  "author": "sumanth prabhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumanthpweb11/mern_videoupload_backend/issues"
+  },
+  "homepage": "https://github.com/sumanthpweb11/mern_videoupload_backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
